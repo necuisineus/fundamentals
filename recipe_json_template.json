@@ -3,15 +3,16 @@
 "@type": "Recipe",
 "name": "enter name of the recipe here",
 
-"date": { - Date becomes a dictionary that holds several different kinds of date information.
-	"dateCreated": "October 5, 2022" - Date when the recipe was created by the author.
-	"deployDate": ["October 8, 2023", "October 12, 2024"] - List of dates when the recipe is deployed into the real world. This could be a dinner, at a restaurant, an event, or made at home. Every time the recipe is deployed, we add the date and then this becomes a robust indication of seasonality.
+"date": {
+	"dateCreated": "October 5, 2022",
+	"deployDate": ["October 8, 2023", "October 12, 2024"]
 },
-"author": {} - Author is a dictionary that holds information related to the author of the recipe.
-	@type: "Organization" - Will be person or organization
-	"name": "Northeast Cuisine" - Author of the recipe, this could be a person or organization.
-	"url": "northeastcuisineus.substack.com" - Authors website or hosting location.
-
+	
+"author": {
+	"@type": "Organization",
+	"name": "Northeast Cuisine",
+	"url": "northeastcuisineus.substack.com"
+},
 "verification": {} - String that will say either verified (VRI), unverified (URI), or approximated. More on this in the Recipe Concepts, Recipes & Dynamic Recipes.
 	"name": "Northeast Cuisine",
 	"verification": "verified",
