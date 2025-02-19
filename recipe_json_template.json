@@ -1,0 +1,60 @@
+{
+"@context": "https://schema.org/",
+"@type": "Recipe",
+"name": "enter name of the recipe here",
+
+"date": { - Date becomes a dictionary that holds several different kinds of date information.
+	"dateCreated": "October 5, 2022" - Date when the recipe was created by the author.
+	"deployDate": ["October 8, 2023", "October 12, 2024"] - List of dates when the recipe is deployed into the real world. This could be a dinner, at a restaurant, an event, or made at home. Every time the recipe is deployed, we add the date and then this becomes a robust indication of seasonality.
+},
+"author": {} - Author is a dictionary that holds information related to the author of the recipe.
+	@type: "Organization" - Will be person or organization
+	"name": "Northeast Cuisine" - Author of the recipe, this could be a person or organization.
+	"url": "northeastcuisineus.substack.com" - Authors website or hosting location.
+
+"verification": {} - String that will say either verified (VRI), unverified (URI), or approximated. More on this in the Recipe Concepts, Recipes & Dynamic Recipes.
+	"name": "Northeast Cuisine",
+	"verification": "verified",
+	"method": "test", - Can have several methods laid out in the future. Verification is an ongoing process, not necessarily a point in time. There will be instances that the verification has low date or high date value based on the application.
+	"verificationDate": "October 8, 2022" - The first date that the recipe is verified.
+
+"recipeConcept": "Chili" - In the standard schema, there is no explicit name for recipe concepts. All recipes will be tied to a recipe concept.
+
+"nameEquals": ["Cabbage Roll", "Golumpki"] - Similar recipe concepts have different names in different languages and cultures. While the recipe concept itself is relative to the geo-cultural area that it is from or being related to, the concepts are kin to one another albeit their own unique kind. Understanding similar naming conventions gives culture context and richer information on the dishes and their relation to cultural diaspora.
+
+"recipeCuisine": "Northeast United States" - This data represents what type of cuisine the recipe is, for us it will always be 'Northeast United States'
+
+"recipeCategory": "Emulsion" - This is where interpretation starts to really fall into play. This is supposed to identify the course time or perception of the dish itself such as appetizer or entree. However, viewing categories in this way is vague and highly interpretable. A meatball sub is a meal, a meatball on a stick is an appetizer. We will use this designation to identify more general category naming conventions. For example, how sauces in modern perception are a reduction, emulsion, or a puree. These descriptions are a lot more indicative of what category something is functionally rather then when and how it is perceived in the dining order.
+
+"prepTime": "PT10M" - Prep time is 10 minutes
+"cookTime": "PT10M" - Cook time is 10 minutes
+"totalTime": "PT20M" - Total time is 20 minutes (prepTime + cookTime)
+
+"recipeYield": "6" - How many servings produced from this recipe. This is a very critical piece of information to have as an integer and not as a range or string ("word"). The recipe yield becomes part of an integrated costing equation in regards to SL food.
+
+"recipeIngredient": [{"quantity":"3", "measurement":"tablespoons", "ingredient":"buttermilk"}, {"":""}] - List of dictionaries of ingredients for this recipe, separated by comma. This will be separated into quantity, measurement, and ingredient.
+
+"recipeInstructions": ["", ""] - List of instructions step by step on how to create the recipe. This could be in the form of text, image, or video document to convey the information.
+
+"nutrition": {"": ""} - Dictionary of nutrition information about the recipe or menu item. This will be informed by Wolfram Nutrition.
+
+"description": "" - A description of the item.
+
+"suitableForDiet": ["https://schema.org/LowFatDiet", "https://schema.org/GlutenFreeDiet"] - Could be any item within the restrictedDiet properties. Single item, or list for recipes that cover multiple.
+
+"estimatedCost": "10.25" - Cost of the recipe in total, this can be divided by servings to know cost per serving. Currency in USD.
+
+"tool": ["8in Stock Pot"], - Tools used to make the recipe. This is an important component of deployment and designing menus and restaurant architecture.
+
+"citation": "Gordon_Ramsey", - A citation or reference to another creative work, such as another publication, web page, scholarly article, etc. In this context, when we refer to other recipes or chefs or inspiration for this recipe. This is not necessarily a citation like in academia, but more of a nod to a lineage or legacy of cultural or professional understanding.
+
+"comment": "", - Comments, typically from users.
+
+"keywords": ["nameEquals", "pork", "keto"], - Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property.
+
+"maintainer": "Northeast_Cuisine" - A maintainer of a Dataset, software package (SoftwareApplication), or other Project. A maintainer is a Person or Organization that manages contributions to, and/or publication of, some (typically complex) artifact. It is common for distributions of software and data to be based on "upstream" sources. When maintainer is applied to a specific version of something e.g. a particular version or packaging of a Dataset, it is always possible that the upstream source has a different maintainer. The isBasedOn property can be used to indicate such relationships between datasets to make the different maintenance roles clear. Similarly in the case of software, a package may have dedicated maintainers working on integration into software distributions such as Ubuntu, as well as upstream maintainers of the underlying work.
+
+"contentLocation": "PA_Philadelphia" - The location depicted or described in the content. Not necessarily related to what we are describing in the content, but the geographic context in which a recipe is being prepared is related to the rest of the important data.
+
+"spatialCoverage": "US_Northeast" - defining the area of Northeast
+}
