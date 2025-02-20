@@ -26,35 +26,32 @@
 "recipeCuisine": "Northeast United States",
 "recipeCategory": "emulsion",     
 
-"prepTime": "PT10M", - Prep time is 10 minutes
-"cookTime": "PT10M", - Cook time is 10 minutes
-"totalTime": "PT20M", - Total time is 20 minutes (prepTime + cookTime)
+"prepTime": "PT10M",
+"cookTime": "PT10M",
+"totalTime": "PT20M",
 
-"recipeYield": "6" - How many servings produced from this recipe. This is a very critical piece of information to have as an integer and not as a range or string ("word"). The recipe yield becomes part of an integrated costing equation in regards to SL food.
+"recipeYield": "6",
 
-"recipeIngredient": [{"quantity":"3", "measurement":"tablespoons", "ingredient":"buttermilk"}, {"":""}] - List of dictionaries of ingredients for this recipe, separated by comma. This will be separated into quantity, measurement, and ingredient.
+"recipeIngredient": [
+	{"quantity":"", 
+	 "measurement":"", 
+	 "ingredient":""}, 
+	{"":""}
+],
 
-"recipeInstructions": ["", ""] - List of instructions step by step on how to create the recipe. This could be in the form of text, image, or video document to convey the information.
+"recipeInstructions": ["", ""],
+"nutrition": {"": ""},
+"description": "",
+"suitableForDiet": ["https://schema.org/LowFatDiet"],
+"estimatedCost": "10.25",
+"tool": ["8in Stock Pot"],
 
-"nutrition": {"": ""} - Dictionary of nutrition information about the recipe or menu item. This will be informed by Wolfram Nutrition.
+"citation": "Gordon_Ramsey",
+"comment": "",
+"keywords": ["cheese", "pork", "keto"],
 
-"description": "" - A description of the item.
+"maintainer": "Northeast_Cuisine",
 
-"suitableForDiet": ["https://schema.org/LowFatDiet", "https://schema.org/GlutenFreeDiet"] - Could be any item within the restrictedDiet properties. Single item, or list for recipes that cover multiple.
-
-"estimatedCost": "10.25" - Cost of the recipe in total, this can be divided by servings to know cost per serving. Currency in USD.
-
-"tool": ["8in Stock Pot"], - Tools used to make the recipe. This is an important component of deployment and designing menus and restaurant architecture.
-
-"citation": "Gordon_Ramsey", - A citation or reference to another creative work, such as another publication, web page, scholarly article, etc. In this context, when we refer to other recipes or chefs or inspiration for this recipe. This is not necessarily a citation like in academia, but more of a nod to a lineage or legacy of cultural or professional understanding.
-
-"comment": "", - Comments, typically from users.
-
-"keywords": ["nameEquals", "pork", "keto"], - Keywords or tags used to describe some item. Multiple textual entries in a keywords list are typically delimited by commas, or by repeating the property.
-
-"maintainer": "Northeast_Cuisine" - A maintainer of a Dataset, software package (SoftwareApplication), or other Project. A maintainer is a Person or Organization that manages contributions to, and/or publication of, some (typically complex) artifact. It is common for distributions of software and data to be based on "upstream" sources. When maintainer is applied to a specific version of something e.g. a particular version or packaging of a Dataset, it is always possible that the upstream source has a different maintainer. The isBasedOn property can be used to indicate such relationships between datasets to make the different maintenance roles clear. Similarly in the case of software, a package may have dedicated maintainers working on integration into software distributions such as Ubuntu, as well as upstream maintainers of the underlying work.
-
-"contentLocation": "PA_Philadelphia" - The location depicted or described in the content. Not necessarily related to what we are describing in the content, but the geographic context in which a recipe is being prepared is related to the rest of the important data.
-
-"spatialCoverage": "US_Northeast" - defining the area of Northeast
+"contentLocation": "PA_Philadelphia",
+"spatialCoverage": "US_Northeast"
 }
