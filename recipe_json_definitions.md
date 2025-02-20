@@ -62,19 +62,19 @@ This document describes the structure of the JSON recipe template, following the
 
 ### Recipe Categorization
 
-- `recipeConcept`: *(String)* General concept of the recipe.
+- `recipeConcept`: *(String)* Recipe concept as detailed in [Recipe Concepts, Recipes & Dynamic Recipes.](https://northeastcuisineus.substack.com/p/recipe-concepts-recipes-and-dynamic) All recipes are tied to a recipe concept.
 
   - Example: `"Chili"`
 
-- `nameEquals`: *(Array of Strings)* Alternative names for the dish in different cultures.
+- `nameEquals`: *(Array of Strings)* Alternative names for the dish in different cultures around the world and inside the U.S. While the recipe concept itself is relative to the geo-cultural area that it is from or related to, the concepts are kin to one another albeit their own unique kind. Understanding similar naming conventions gives culture context and richer information on the dishes and their relation to cultural diaspora.
 
   - Example: `["Cabbage Roll", "Golumpki"]`
 
-- `recipeCuisine`: *(String)* The cuisine classification.
+- `recipeCuisine`: *(String)* The cuisine classification. This data represents what type of cuisine the recipe is, for us it will always be 'Northeast United States'. Cuisine is emergent, it can be influenced but mostly must be practiced within an area and crucially, the home.
 
   - Example: `"Northeast United States"`
 
-- `recipeCategory`: *(String)* A functional classification of the dish.
+- `recipeCategory`: *(String)* A functional classification of the dish. This is where interpretation starts to really fall into play. This field in the schema.org conception, is supposed to identify the course time or perception of the dish itself such as appetizer or entree. However, viewing categories in this way is vague and highly interpretable. A meatball sub is a meal, a meatball on a stick is an appetizer. We will use this designation to identify more general category naming conventions. For example, how sauces in modern perception are a reduction, emulsion, or a puree. These descriptions are a lot more indicative of what category something is functionally rather then when and how it is perceived in the dining order.
 
   - Example: `"Emulsion"`
 
@@ -88,17 +88,17 @@ This document describes the structure of the JSON recipe template, following the
 
   - Example: `"PT10M"` (10 minutes)
 
-- `totalTime`: *(String)* Total time required.
+- `totalTime`: *(String)* Total time required in ISO 8601 format. (prepTime + cookTime).
 
   - Example: `"PT20M"`
 
 ### Yield and Ingredients
 
-- `recipeYield`: *(Integer/String)* Number of servings.
+- `recipeYield`: *(Integer/String)* Number of servings. This is a very critical piece of information to have as an integer and not as a range or string ("word"). The recipe yield becomes part of an integrated costing equation in regards to SL food.
 
   - Example: `"6"`
 
-- `recipeIngredient`: *(Array of Objects)* List of ingredients with quantity and measurement.
+- `recipeIngredient`: *(Array of Objects)* List of dictionaries of ingredients for this recipe, separated by comma. This will be separated into quantity, measurement, and ingredient. The ingredients can be expanded into complex data with even more attributes.
 
   - Example:
     ```json
@@ -114,14 +114,14 @@ This document describes the structure of the JSON recipe template, following the
 
 ### Nutrition
 
-- `nutrition`: *(Object)* Nutritional information (to be filled using Wolfram Nutrition).
-  - Example: `{}`
+- `nutrition`: *(Object)* Nutritional information.
+  - Example: `{"Calories: "888"}`
 
 ### Additional Metadata
 
-- `description`: *(String)* A brief description of the recipe.
+- `description`: *(String)* A description of the recipe.
 
-  - Example: `""`
+  - Example: `"description of the recipe"`
 
 - `suitableForDiet`: *(Array of Strings)* Dietary considerations, using schema.org standards.
 
@@ -133,15 +133,15 @@ This document describes the structure of the JSON recipe template, following the
 
 ### Tools and Citations
 
-- `tool`: *(Array of Strings)* Required kitchen tools.
+- `tool`: *(Array of Strings)* Tools used to make the recipe. This is an important component of deployment and designing menus and restaurant architecture.
 
   - Example: `["8in Stock Pot"]`
 
-- `citation`: *(String)* A reference to a source or inspiration.
+- `citation`: *(String)* A citation or reference to another creative work, such as another publication, web page, scholarly article, etc. In this context, when we refer to other recipes or chefs or inspiration for this recipe. This is not necessarily a citation like in academia, but more of a nod to a lineage of cultural or professional understanding and influence.
 
   - Example: `"Gordon_Ramsey"`
 
-- `comment`: *(String)* User comments.
+- `comment`: *(String)* User comments. Perhaps as a social commentary piece of diners and those who eat.
 
   - Example: `""`
 
@@ -151,17 +151,17 @@ This document describes the structure of the JSON recipe template, following the
 
   - Example: `["nameEquals", "pork", "keto"]`
 
-- `maintainer`: *(String)* Name of the maintainer.
+- `maintainer`: *(String)* A maintainer of a Dataset, software package (SoftwareApplication), or other Project. A maintainer is a Person or Organization that manages contributions to, and/or publication of, some (typically complex) artifact. It is common for distributions of software and data to be based on "upstream" sources. When maintainer is applied to a specific version of something e.g. a particular version or packaging of a Dataset, it is always possible that the upstream source has a different maintainer. The isBasedOn property can be used to indicate such relationships between datasets to make the different maintenance roles clear. Similarly in the case of software, a package may have dedicated maintainers working on integration into software distributions such as Ubuntu, as well as upstream maintainers of the underlying work.
 
   - Example: `"Northeast_Cuisine"`
 
 ### Location Information
 
-- `contentLocation`: *(String)* Geographic context for the recipe.
+- `contentLocation`: *(String)* Geographic context for the recipe. The location depicted or described in the content. Not necessarily related to what we are describing in the content, but the geographic context in which a recipe is being prepared is related to the rest of the important data.
 
   - Example: `"PA_Philadelphia"`
 
-- `spatialCoverage`: *(String)* General region covered.
+- `spatialCoverage`: *(String)* General region covered. Defining the area of Northeast
 
   - Example: `"US_Northeast"`
 
