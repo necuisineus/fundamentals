@@ -35,8 +35,10 @@
 "recipeIngredient": [
 	{"quantity":"", 
 	 "measurement":"", 
-	 "ingredient":""}, 
-	{"":""}
+	 "ingredient":""},
+	{"quantity":"", 
+	 "measurement":"", 
+	 "ingredient":""},
 ],
 
 "recipeInstructions": ["", ""],
