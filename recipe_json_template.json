@@ -13,23 +13,22 @@
 	"name": "Northeast Cuisine",
 	"url": "northeastcuisineus.substack.com"
 },
-"verification": {} - String that will say either verified (VRI), unverified (URI), or approximated. More on this in the Recipe Concepts, Recipes & Dynamic Recipes.
+	
+"verification": {
 	"name": "Northeast Cuisine",
 	"verification": "verified",
-	"method": "test", - Can have several methods laid out in the future. Verification is an ongoing process, not necessarily a point in time. There will be instances that the verification has low date or high date value based on the application.
-	"verificationDate": "October 8, 2022" - The first date that the recipe is verified.
+	"method": "workshop",
+	"verificationDate": "October 8, 2022"
+},
+	
+"recipeConcept": "recipeConcept",
+"nameEquals": ["Cabbage Roll", "Golumpki"],
+"recipeCuisine": "Northeast United States",
+"recipeCategory": "emulsion",     
 
-"recipeConcept": "Chili" - In the standard schema, there is no explicit name for recipe concepts. All recipes will be tied to a recipe concept.
-
-"nameEquals": ["Cabbage Roll", "Golumpki"] - Similar recipe concepts have different names in different languages and cultures. While the recipe concept itself is relative to the geo-cultural area that it is from or being related to, the concepts are kin to one another albeit their own unique kind. Understanding similar naming conventions gives culture context and richer information on the dishes and their relation to cultural diaspora.
-
-"recipeCuisine": "Northeast United States" - This data represents what type of cuisine the recipe is, for us it will always be 'Northeast United States'
-
-"recipeCategory": "Emulsion" - This is where interpretation starts to really fall into play. This is supposed to identify the course time or perception of the dish itself such as appetizer or entree. However, viewing categories in this way is vague and highly interpretable. A meatball sub is a meal, a meatball on a stick is an appetizer. We will use this designation to identify more general category naming conventions. For example, how sauces in modern perception are a reduction, emulsion, or a puree. These descriptions are a lot more indicative of what category something is functionally rather then when and how it is perceived in the dining order.
-
-"prepTime": "PT10M" - Prep time is 10 minutes
-"cookTime": "PT10M" - Cook time is 10 minutes
-"totalTime": "PT20M" - Total time is 20 minutes (prepTime + cookTime)
+"prepTime": "PT10M", - Prep time is 10 minutes
+"cookTime": "PT10M", - Cook time is 10 minutes
+"totalTime": "PT20M", - Total time is 20 minutes (prepTime + cookTime)
 
 "recipeYield": "6" - How many servings produced from this recipe. This is a very critical piece of information to have as an integer and not as a range or string ("word"). The recipe yield becomes part of an integrated costing equation in regards to SL food.
 
