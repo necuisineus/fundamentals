@@ -48,7 +48,7 @@ This document describes the structure of the JSON recipe template, following the
 - `verification`: *(Object)* Verification details.
   - `name`: *(String)* Name of the verifying entity.
   - `verification`: *(String)* Status: "verified" (VRI), "unverified" (URI), or "approximated". More on this in the article [Recipe Concepts, Recipes & Dynamic Recipes.](https://northeastcuisineus.substack.com/p/recipe-concepts-recipes-and-dynamic)
-  - `method`: *(String)* Method of verification.
+  - `method`: *(String)* Method of verification. Dinner, workshop, restarant, cafeteria, etc.
   - `verificationDate`: *(String)* Date when verification was first recorded.
   - Example:
     ```json
