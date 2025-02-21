@@ -26,7 +26,7 @@ This document describes the structure of the JSON recipe template, following the
   - `dateCreated`: *(String)* The date when the recipe was authored.
     - Example: `"October 5, 2022"`
   - `deployDate`: *(Array of Strings)* List of dates when the recipe was used or deployed.
-    - Example: `["October 8, 2023", "October 12, 2024"]`
+    - Example: `["October 5, 2022, "October 8, 2023", "October 12, 2024"]`
 
 ### Author Information
 
