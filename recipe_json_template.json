@@ -33,9 +33,9 @@
 "recipeYield": "6",
 
 "recipeIngredient": [
-	{"quantity":"", 
-	 "measurement":"", 
-	 "ingredient":""},
+	{"quantity":"4", 
+	 "measurement":"kg", 
+	 "ingredient":"potatoes-yukon gold"},
 	{"quantity":"", 
 	 "measurement":"", 
 	 "ingredient":""}
