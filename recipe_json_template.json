@@ -41,7 +41,12 @@
 	 "ingredient":""}
 ],
 
-"recipeInstructions": ["", ""],
+"recipeInstructions": [
+	{"@type": "HowToStep",
+	 "name": "Bake Potatoes",
+	 "text": "Preheat your oven to 400°F, cook for 1 hour and 15 minutes"
+	},
+],
 "nutrition": {"": ""},
 "description": "",
 "suitableForDiet": ["https://schema.org/LowFatDiet"],
