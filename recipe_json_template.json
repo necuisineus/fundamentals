@@ -20,6 +20,13 @@
 	"method": "workshop",
 	"verificationDate": "October 8, 2022"
 },
+
+"score": {
+	"Eq": 100,
+	"Vm": 100,
+	"Total": 100,
+	"ALAP": 100
+},
 	
 "recipeConcept": "recipeConcept",
 "nameEquals": ["Cabbage Roll", "Golumpki"],
