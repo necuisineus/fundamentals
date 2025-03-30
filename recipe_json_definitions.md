@@ -63,10 +63,10 @@ This document describes the structure of the JSON recipe template, following the
 
 - `score`: *(Object)* Represents scoring metrics associated with the recipe, used to evaluate culinary quality, presentation, locality of ingredients, and overall performance. Each metric is scored numerically, typically from 0 to 100.
 
-  - `Eq`: *(Integer)* **Execution Quality**—measures precision and consistency in executing the recipe.
+  - `Eq`: *(Integer)* **Equal Weight**—Eq takes every ingredient in the recipe and weighs their impact the same. If your recipe has 15 ingredients, your score will be based on how many of those ingredients are SL.
     - Example: `100`
 
-  - `Vm`: *(Integer)* **Visual Mastery**—evaluates the presentation, plating, and overall aesthetic quality of the dish.
+  - `Vm`: *(Integer)* **Volume/Mass**—Vm is taking each ingredient and standardizing their volume or mass to milliliters or grams respectively. Because certain ingredients comprise a larger portion of a recipe, they should be weighed more heavily than an ingredient that takes up a smaller portion.
     - Example: `95`
 
   - `ALAP`: *(Integer)* **As Local As Possible**— A special scoring metric to discuss items that do not score in the typical NEC Seasonal-Local metric, but where the ingredients are as local as possible.
