@@ -67,21 +67,21 @@ This document describes the structure of the JSON recipe template, following the
     - Example: `100`
 
   - `Vm`: *(Integer)* **Visual Mastery**—evaluates the presentation, plating, and overall aesthetic quality of the dish.
-    - Example: `100`
+    - Example: `95`
 
-  - `ALAP`: *(Integer)* **As Local As Possible**—indicates the degree to which local ingredients or regional products are used.
-    - Example: `100`
+  - `ALAP`: *(Integer)* **As Local As Possible**— A special scoring metric to discuss items that do not score in the typical NEC Seasonal-Local metric, but where the ingredients are as local as possible.
+    - Example: `84.64`
 
   - `Total`: *(Integer)* A combined or overall aggregate score representing the recipe's performance across all metrics.
-    - Example: `100`
+    - Example: `97.5`
 
 **Example JSON:**
 ```json
 "score": {
   "Eq": 100,
-  "Vm": 100,
-  "ALAP": 100,
-  "Total": 100
+  "Vm": 95,
+  "ALAP": 84.64,
+  "Total": 97.5
 }
 ```
 ### Recipe Categorization
