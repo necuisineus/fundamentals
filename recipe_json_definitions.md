@@ -59,7 +59,31 @@ This document describes the structure of the JSON recipe template, following the
         "verificationDate": "October 8, 2022"
     }
     ```
+### Scoring Information
 
+- `score`: *(Object)* Represents scoring metrics associated with the recipe, used to evaluate culinary quality, presentation, locality of ingredients, and overall performance. Each metric is scored numerically, typically from 0 to 100.
+
+  - `Eq`: *(Integer)* **Execution Quality**—measures precision and consistency in executing the recipe.
+    - Example: `100`
+
+  - `Vm`: *(Integer)* **Visual Mastery**—evaluates the presentation, plating, and overall aesthetic quality of the dish.
+    - Example: `100`
+
+  - `ALAP`: *(Integer)* **As Local As Possible**—indicates the degree to which local ingredients or regional products are used.
+    - Example: `100`
+
+  - `Total`: *(Integer)* A combined or overall aggregate score representing the recipe's performance across all metrics.
+    - Example: `100`
+
+**Example JSON:**
+```json
+"score": {
+  "Eq": 100,
+  "Vm": 100,
+  "ALAP": 100,
+  "Total": 100
+}
+```
 ### Recipe Categorization
 
 - `recipeConcept`: *(String)* Recipe concept as detailed in [Recipe Concepts, Recipes & Dynamic Recipes.](https://northeastcuisineus.substack.com/p/recipe-concepts-recipes-and-dynamic) All recipes are tied to a recipe concept.
