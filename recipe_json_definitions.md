@@ -115,6 +115,39 @@ This document describes the structure of the JSON recipe template, following the
 - `totalTime`: *(String)* Total time required in ISO 8601 format. (prepTime + cookTime).
 
   - Example: `"PT20M"`
+ 
+# ISO 8601 Duration Format for Recipe Times
+
+The prep time, cook time, and total time should be represented using the ISO 8601 duration format. This format expresses a period of time in a concise, standardized way.
+
+## Format
+
+The general format is:
+
+
+Where:
+- **P** – Indicates the start of the period.
+- **nY** – Number of years.
+- **nM** – Number of months (if before the `T`, it represents months; if after the `T`, it represents minutes).
+- **nD** – Number of days.
+- **T** – Separator that indicates the start of the time component.
+- **nH** – Number of hours.
+- **nM** – Number of minutes.
+- **nS** – Number of seconds.
+
+## Examples
+
+- **PT10M** – 10 minutes  
+- **PT1H** – 1 hour  
+- **PT1H30M** – 1 hour and 30 minutes  
+- **PT45M** – 45 minutes  
+- **PT30S** – 30 seconds  
+- **P1D** – 1 day  
+- **P1DT2H** – 1 day and 2 hours  
+- **P2DT3H4M** – 2 days, 3 hours, and 4 minutes
+
+*Note:* For most recipe applications, you'll likely use the time component only (e.g., `PT10M` or `PT1H30M`), but the full format is available if you need to represent longer durations.
+
 
 ### Yield and Ingredients
 
