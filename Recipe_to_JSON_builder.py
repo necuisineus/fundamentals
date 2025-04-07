@@ -1,3 +1,7 @@
+# For use in google colab, put in their own cells and run these two steps. Otherwise check the readme for this file.
+# Step 1 - !git clone https://github.com/necuisineus/fundamentals.git
+# Step 2 - %run fundamentals/Recipe_to_JSON_builder.py
+
 import ipywidgets as widgets
 from IPython.display import display, clear_output
 import json
