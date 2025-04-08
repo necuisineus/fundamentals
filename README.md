@@ -1,9 +1,19 @@
-# fundamentals
+# Fundamentals
 
-In this repo are definitions, dictionaries, and templates for use in Seasonal-Local applications, data analysis, and deployment.
+Welcome to the **Fundamentals** repository. This resource provides definitions, dictionaries, and templates designed for Seasonal-Local applications, data analysis, and deployment.
 
-recipe_json_template_example.json - Example of the current structured JSON format.
+---
 
-Recipe_to_JSON_builder.py - A notebook in google colab to make structured JSON recipe documents.
+## Repository Overview
+
+- **recipe_json_template_example.json**  
+  An example showcasing the current structured JSON format.
+
+- **Recipe_to_JSON_builder.py**  
+  A Google Colab notebook that guides you through building structured JSON recipe documents.
+
+---
+
+## Try It Out in Colab
+
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/necuisineus/fundamentals/blob/main/Recipe_to_JSON_builder.ipynb)
-
