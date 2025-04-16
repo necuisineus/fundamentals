@@ -157,7 +157,7 @@ Where:
  
 - `recipeYield`: *(Object)* The volume or weight of the resulting 'dish'. Helpful with core simple ingredients such as making butter or mascarpone where you want to understand a true yield for use in other recipes.
 
-  - Example: `{"Calories: "888"}`
+  - Example: `{"quantity: "225", measurement: "g"}`
 
 - `recipeIngredient`: *(Array of Objects)* List of dictionaries of ingredients for this recipe, separated by comma. This will be separated into quantity, measurement, and ingredient. The ingredients can be expanded into complex data with even more attributes.
 
