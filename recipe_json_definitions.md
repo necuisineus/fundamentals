@@ -159,7 +159,7 @@ Where:
 
   - Example:
     ```json
-    {"quantity: "225", measurement: "g"}`
+    {"quantity: "225", measurement: "g"}
     ```
 
 - `recipeIngredient`: *(Array of Objects)* List of dictionaries of ingredients for this recipe, separated by comma. This will be separated into quantity, measurement, and ingredient. The ingredients can be expanded into complex data with even more attributes.
