@@ -37,7 +37,12 @@
 "cookTime": "PT10M",
 "totalTime": "PT20M",
 
-"recipeYield": "6",
+"recipeYieldServings": "6",
+
+"recipeYield": {
+	"quantity":,
+	"measurement":
+},
 
 "recipeIngredient": [
 	{"quantity":"4", 
