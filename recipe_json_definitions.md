@@ -151,9 +151,13 @@ Where:
 
 ### Yield and Ingredients
 
-- `recipeYield`: *(Integer/String)* Number of servings. This is a very critical piece of information to have as an integer and not as a range or string ("word"). The recipe yield becomes part of an integrated costing equation in regards to SL food.
+- `recipeYieldServings`: *(Integer/String)* Number of servings. This is a very critical piece of information to have as an integer and not as a range or string ("word"). The recipe yield becomes part of an integrated costing equation in regards to SL food.
 
   - Example: `"6"`
+ 
+- `recipeYield`: *(Object)* The volume or weight of the resulting 'dish'. Helpful with core simple ingredients such as making butter or mascarpone where you want to understand a true yield for use in other recipes.
+
+  - Example: `{"Calories: "888"}`
 
 - `recipeIngredient`: *(Array of Objects)* List of dictionaries of ingredients for this recipe, separated by comma. This will be separated into quantity, measurement, and ingredient. The ingredients can be expanded into complex data with even more attributes.
 
